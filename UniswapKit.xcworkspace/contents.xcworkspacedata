@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Uniswap/UniswapKit/UniswapKitDemo/UniswapKitDemo.xcodeproj">
+      location = "group:UniswapKit/UniswapKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../Uniswap/UniswapKit/UniswapKit/UniswapKit.xcodeproj">
+      location = "group:UniswapKitDemo/UniswapKitDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664B2649DEED238AFF12F092 /* Pods_UniswapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F542EED12F2BEBFDDE30D066 /* Pods_UniswapKit.framework */; };
 		B54E88E8249F649F00047704 /* UniswapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B54E88E6249F649F00047704 /* UniswapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A4203CD9C06B1FC622E974 /* Pods-UniswapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniswapKit.debug.xcconfig"; path = "Target Support Files/Pods-UniswapKit/Pods-UniswapKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9E15B2E65283AB7D3D7F4748 /* Pods-UniswapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniswapKit.release.xcconfig"; path = "Target Support Files/Pods-UniswapKit/Pods-UniswapKit.release.xcconfig"; sourceTree = "<group>"; };
 		B54E88E3249F649F00047704 /* UniswapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UniswapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E88E6249F649F00047704 /* UniswapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniswapKit.h; sourceTree = "<group>"; };
 		B54E88E7249F649F00047704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F542EED12F2BEBFDDE30D066 /* Pods_UniswapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniswapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +25,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664B2649DEED238AFF12F092 /* Pods_UniswapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADD6388750613E7845F2F578 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F542EED12F2BEBFDDE30D066 /* Pods_UniswapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B54E88D9249F649F00047704 = {
 			isa = PBXGroup;
 			children = (
 				B54E88E5249F649F00047704 /* UniswapKit */,
 				B54E88E4249F649F00047704 /* Products */,
+				E8FE03E7AAA86575F1649B1C /* Pods */,
+				ADD6388750613E7845F2F578 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +67,16 @@
 			path = UniswapKit;
 			sourceTree = "<group>";
 		};
+		E8FE03E7AAA86575F1649B1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01A4203CD9C06B1FC622E974 /* Pods-UniswapKit.debug.xcconfig */,
+				9E15B2E65283AB7D3D7F4748 /* Pods-UniswapKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54E88EB249F649F00047704 /* Build configuration list for PBXNativeTarget "UniswapKit" */;
 			buildPhases = (
+				652815B60A1006CE9350D001 /* [CP] Check Pods Manifest.lock */,
 				B54E88DE249F649F00047704 /* Headers */,
 				B54E88DF249F649F00047704 /* Sources */,
 				B54E88E0249F649F00047704 /* Frameworks */,
@@ -125,6 +151,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		652815B60A1006CE9350D001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniswapKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B54E88DF249F649F00047704 /* Sources */ = {
@@ -259,6 +310,7 @@
 		};
 		B54E88EC249F649F00047704 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A4203CD9C06B1FC622E974 /* Pods-UniswapKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -283,6 +335,7 @@
 		};
 		B54E88ED249F649F00047704 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E15B2E65283AB7D3D7F4748 /* Pods-UniswapKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

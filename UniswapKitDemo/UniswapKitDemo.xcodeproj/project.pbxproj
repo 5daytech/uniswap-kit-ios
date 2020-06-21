@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C094AD7D551197030C5D606 /* Pods_UniswapKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F414BAD4D992DC70EAED35BD /* Pods_UniswapKitDemo.framework */; };
 		B54E88FB249F64F400047704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E88FA249F64F400047704 /* AppDelegate.swift */; };
 		B54E88FD249F64F400047704 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E88FC249F64F400047704 /* SceneDelegate.swift */; };
 		B54E88FF249F64F400047704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E88FE249F64F400047704 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2823F65ED4980A0B78BDCCDB /* Pods-UniswapKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniswapKitDemo.release.xcconfig"; path = "Target Support Files/Pods-UniswapKitDemo/Pods-UniswapKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B54E88F7249F64F400047704 /* UniswapKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniswapKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E88FA249F64F400047704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54E88FC249F64F400047704 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		B54E8903249F64F600047704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54E8906249F64F600047704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54E8908249F64F600047704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6C62AE9265E70AA7B92C59 /* Pods-UniswapKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniswapKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-UniswapKitDemo/Pods-UniswapKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F414BAD4D992DC70EAED35BD /* Pods_UniswapKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniswapKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C094AD7D551197030C5D606 /* Pods_UniswapKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29E4BC296637EE7F312501C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F414BAD4D992DC70EAED35BD /* Pods_UniswapKitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6CB7A4B59FCF9A2244FC391 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C62AE9265E70AA7B92C59 /* Pods-UniswapKitDemo.debug.xcconfig */,
+				2823F65ED4980A0B78BDCCDB /* Pods-UniswapKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		B54E88EE249F64F400047704 = {
 			isa = PBXGroup;
 			children = (
 				B54E88F9249F64F400047704 /* UniswapKitDemo */,
 				B54E88F8249F64F400047704 /* Products */,
+				A6CB7A4B59FCF9A2244FC391 /* Pods */,
+				29E4BC296637EE7F312501C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54E890B249F64F600047704 /* Build configuration list for PBXNativeTarget "UniswapKitDemo" */;
 			buildPhases = (
+				0565B962F70EC4862E3DEB7E /* [CP] Check Pods Manifest.lock */,
 				B54E88F3249F64F400047704 /* Sources */,
 				B54E88F4249F64F400047704 /* Frameworks */,
 				B54E88F5249F64F400047704 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0565B962F70EC4862E3DEB7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniswapKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B54E88F3249F64F400047704 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		B54E890C249F64F600047704 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6C62AE9265E70AA7B92C59 /* Pods-UniswapKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fridaytech.UniswapKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UniswapKitDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +352,7 @@
 		};
 		B54E890D249F64F600047704 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2823F65ED4980A0B78BDCCDB /* Pods-UniswapKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +363,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fridaytech.UniswapKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UniswapKitDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
